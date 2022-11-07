@@ -7,7 +7,7 @@
 
 const precoLitro = 6.32;
 const distancia = 80;
-const kmPorLitro = 10;
+const gastoPorKm = 10;
 
 let litroConsumido = distancia / kmPorLitro;
 let gasto = litroConsumido * precoLitro;
