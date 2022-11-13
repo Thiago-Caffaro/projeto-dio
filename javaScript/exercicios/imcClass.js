@@ -33,6 +33,7 @@
 			return ('Obesidade grave');
 		}
 	}
+	
 }
 const pessoa1 = new pessoas('Alberto', 73, 1.80);
 console.log(pessoa1.valorIMC());
