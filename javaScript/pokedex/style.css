@@ -1,46 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
 *{
     font-family: 'Mukta', sans-serif;
+    color: #ffff;
 }
 body{
-    background-color: gray;
+    background-color: rgb(255, 255, 255);
 }
-ol{
+section{
+    background-color: rgb(240, 240, 240);
+    height: 100vh;
+    border-radius: 10px;
+    transition: .3s;
+
+}
+section>h1{
+    margin-top: 10px;
+    margin-left: 15px;
+    display: inline-block;
+    color: black;
+}
+.pokemons{
     padding-left: 0;
     list-style: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: grid;   
+    grid-template-columns: 1fr;
 }
-li{
-    height: 95px;
-    width: 145px;
-    margin: 10px;
+@media screen and (min-width:390px){
+    .pokemons{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width:550px){
+    .pokemons{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (min-width: 992px){
+    .pokemons{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    section{
+        max-width: 992px;
+        margin: 0 auto;
+    }
+}
+
+.pokemon{
+    margin: 15px;
     padding: 10px;
     border-radius: 10px;
-    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    background-color: #49d0b0;
 }
-.grama{
-    background-color: rgb(34, 225, 155);
+.numero{
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
 }
 .nome{
+    margin-top: 0;
+    font-size: 20px;
     margin-bottom: 0px;
 }
 .tag{
-    background-color: rgba(240, 248, 255, 0.569);
-    color: black;
+    background-color: rgba(66, 238, 232, 0.569);
     border-radius: 20px;
     margin-top: 7px;
     margin-bottom: 0px;
     padding: 0.6rem;
     padding-top: 0.4rem;
-    display: inline-block;
     height: 10px;
     width: 70px;
 }
-img{
-    height: 60px;
+.detalhes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.detalhes > img{
     width: 60px;
     max-width: 100%;
-    display: flex;
-    position: absolute;
 }
