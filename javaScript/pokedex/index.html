@@ -11,20 +11,12 @@
 <body>
     <section>
         <h1>PokeDex</h1>
-        <ol class="pokemons">
-            <li class="pokemon">
-                <p class="numero">#0001</p>
-                <p class="nome">Bulbasaur</p>
-                <div class="detalhes">
-                    <div class="tipos">   
-                        <p class="tag">Grama</p>
-                        <p class="tag">Veneno</p>
-                    </div>
-                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg">
-                </div>
-            </li>
-        </ol>
+        <ol id="pokemonList" class="pokemons"></ol>
+        
     </section>
+    <script src="script/poke-api.js"></script>
     <script src="script/script.js"></script>
+    <script src="script/pokemon-model.js"></script>
+
 </body>
 </html>
